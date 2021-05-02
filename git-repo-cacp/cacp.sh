@@ -22,7 +22,7 @@ feature_status=$(git status)
 echo "git status:\n" ""$statusColor" $feature_status"\
 
 # adding all the changes to staging environment
-git add --all
+git add -i
 
 # capturing the commit message
 commit_message="$1"
